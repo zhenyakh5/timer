@@ -1,5 +1,6 @@
 #include <iostream>
 #include <Windows.h>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -18,7 +19,7 @@ int main() {
         int minutes = (remainingTime % 3600) / 60;
         int seconds = remainingTime % 60;
 
-        cout << hours << ":" << minutes << ":" << seconds << endl;
+        cout << setw(2) << setfill('0') << hours << ":" << setw(2) << setfill('0') << minutes << ":" << setw(2) << setfill('0') << seconds << endl;
 
         Sleep(1000);
 
