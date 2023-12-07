@@ -30,6 +30,15 @@ int main() {
     }
 
     system("cls");
+
+    for (int i = 0; i < 2; i++) {
+        Beep(800, 300);
+        Beep(800, 300);
+        Beep(800, 300);
+        Beep(800, 300);
+        Sleep(2000);
+    }
+
     cout << "Таймер завершен!" << endl;
 
     return 0;
