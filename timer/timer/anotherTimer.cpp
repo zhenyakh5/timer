@@ -12,8 +12,6 @@ bool isNum(const string& str)
 }
 
 int anotherTimer() {
-    cout << "Хотите установить ещё один таймер?\n1 - Да.\n2 - Нет.\n";
-
     string key;
     while (true) {
         cout << "Введите цифру (от 1 до 2): ";

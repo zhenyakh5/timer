@@ -53,6 +53,9 @@ setTimer:
     }
 
     Sleep(2000);
+
+    cout << "Хотите установить ещё один таймер?\n1 - Да.\n2 - Нет.\n";
+setAnotherTimer:    
     int key = anotherTimer();
     switch (key) {
         case 1: {
@@ -61,6 +64,10 @@ setTimer:
         case 2: {
             cout << "До свидания!";
             return 0;
+        }
+        default: {
+            cout << "Ошибка! Необходимо ввести цифру от 1 до 2.\n";
+            goto setAnotherTimer;
         }
     }
 }
