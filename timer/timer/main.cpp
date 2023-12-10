@@ -6,12 +6,16 @@
 #include "displayPausedTime.h"
 #include "getRemainingTime.h"
 #include "pauseTimer.h"
+#include "stopTimer.h"
+#include "anotherTimer.h"
 using namespace std;
 
 int main() {
     setlocale(LC_ALL, "Russian");
+setTimer:
     int remainingTime = getRemainingTime();
     bool isPaused = false;
+    bool isStopped = false;
 
     while (remainingTime > 0) {
         pauseTimer(isPaused);
@@ -27,11 +31,20 @@ int main() {
             displayPausedTime(remainingTime);
             Sleep(1000);
         }
+
+        stopTimer(isStopped);
+
+        if (isStopped) {
+            remainingTime = 0;
+        }
     }
 
     system("cls");
 
+    cout << "Таймер завершен!" << endl;
+
     for (int i = 0; i < 2; i++) {
+        Beep(800, 300);
         Beep(800, 300);
         Beep(800, 300);
         Beep(800, 300);
@@ -39,7 +52,15 @@ int main() {
         Sleep(2000);
     }
 
-    cout << "Таймер завершен!" << endl;
-
-    return 0;
+    Sleep(2000);
+    int key = anotherTimer();
+    switch (key) {
+        case 1: {
+            goto setTimer;
+        }
+        case 2: {
+            cout << "До свидания!";
+            return 0;
+        }
+    }
 }

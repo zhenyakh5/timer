@@ -127,17 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="anotherTimer.cpp" />
     <ClCompile Include="displayPausedTime.cpp" />
     <ClCompile Include="displayTime.cpp" />
     <ClCompile Include="getRemainingTime.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pauseTimer.cpp" />
+    <ClCompile Include="stopTimer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="anotherTimer.h" />
     <ClInclude Include="displayPausedTime.h" />
     <ClInclude Include="displayTime.h" />
     <ClInclude Include="getRemainingTime.h" />
     <ClInclude Include="pauseTimer.h" />
+    <ClInclude Include="stopTimer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

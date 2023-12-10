@@ -5,7 +5,7 @@ using namespace std;
 void pauseTimer(bool& isPaused) {
     if (_kbhit()) { // Проверяет, была ли нажата клавиша
         char key = _getch(); // Считывание символа без его вывода в консоль
-        if (key == ' ') {
+        if (key == 32) {
             isPaused = !isPaused;
         }
     }
