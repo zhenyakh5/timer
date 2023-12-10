@@ -1,4 +1,4 @@
-#include "stopTimer.h";
+#include "stopTimer.h"
 #include <conio.h>
 using namespace std;
 

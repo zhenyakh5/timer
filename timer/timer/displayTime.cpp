@@ -1,6 +1,6 @@
-#include "displayTime.h";
-#include <iostream>;
-#include <iomanip>;
+#include "displayTime.h"
+#include <iostream>
+#include <iomanip>
 using namespace std;
 
 void displayTime(int remainingTime) {
