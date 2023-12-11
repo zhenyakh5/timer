@@ -11,6 +11,8 @@
 using namespace std;
 
 int main() {
+    system("title Консольный таймер");
+    system("mode con cols=40 lines=25");
     setlocale(LC_ALL, "Russian");
 setTimer:
     int remainingTime = getRemainingTime();
