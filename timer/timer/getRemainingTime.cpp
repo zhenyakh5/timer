@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <iomanip>
 using namespace std;
 
 bool isNumber(const string& str)
@@ -19,6 +20,7 @@ int getRemainingTime() {
         if (isNumber(hours))
             break;
         else
+            system("cls");
             cout << "Ошибка! Необходимо вводить только цифры. Попробуйте снова.\n";
     }
     while (true) {

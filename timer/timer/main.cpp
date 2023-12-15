@@ -12,7 +12,7 @@ using namespace std;
 
 int main() {
     system("title Консольный таймер");
-    system("mode con cols=40 lines=25");
+    system("mode con cols=44 lines=10");
     setlocale(LC_ALL, "Russian");
 setTimer:
     int remainingTime = getRemainingTime();
@@ -61,6 +61,7 @@ setAnotherTimer:
     int key = anotherTimer();
     switch (key) {
         case 1: {
+            system("cls");
             goto setTimer;
         }
         case 2: {
