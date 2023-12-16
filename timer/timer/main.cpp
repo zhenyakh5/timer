@@ -11,6 +11,8 @@ using namespace std;
 
 int main() {
     system("title Консольный таймер");
+    system("mode con cols=44 lines=10");
+
     setlocale(LC_ALL, "Russian");
 setTimer:
     int remainingTime = getRemainingTime();
@@ -41,7 +43,7 @@ setTimer:
 
     system("cls");
 
-    cout << "Таймер завершен!" << endl;
+    cout << setw(206) << setfill(' ') << "Таймер завершен!" << endl;
 
     for (int i = 0; i < 2; i++) {
         Beep(800, 300);
@@ -63,7 +65,7 @@ setAnotherTimer:
         }
         case 2: {
             system("cls");
-            cout << "До свидания!";
+            cout << setw(28) << setfill(' ') << "До свидания!";
             return 0;
         }
         default: {
