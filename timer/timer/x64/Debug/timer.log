@@ -1,2 +1,9 @@
 ﻿  anotherTimer.cpp
+  displayPausedTime.cpp
+  displayTime.cpp
+  getRemainingTime.cpp
+  main.cpp
+  pauseTimer.cpp
+  stopTimer.cpp
+  Создание кода...
   timer.vcxproj -> D:\University\vrpo\timer\timer\x64\Debug\timer.exe
