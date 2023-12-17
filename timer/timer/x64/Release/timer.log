@@ -1,0 +1,12 @@
+﻿  anotherTimer.cpp
+  displayPausedTime.cpp
+  displayTime.cpp
+  getRemainingTime.cpp
+  main.cpp
+  pauseTimer.cpp
+  stopTimer.cpp
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 122 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  timer.vcxproj -> D:\University\vrpo\timer\timer\x64\Release\timer.exe
