@@ -1,6 +1,6 @@
-#include "displayPausedTime.h"
 #include <iostream>
 #include <iomanip>
+#include "displayPausedTime.h"
 using namespace std;
 
 void displayPausedTime(int remainingTime) {

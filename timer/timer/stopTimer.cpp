@@ -1,10 +1,10 @@
-#include "stopTimer.h"
 #include <conio.h>
+#include "stopTimer.h"
 using namespace std;
 
 void stopTimer(bool& isStopped) {
-    if (_kbhit()) { // Проверяет, была ли нажата клавиша
-        char key = _getch(); // Считывание символа без его вывода в консоль
+    if (_kbhit()) {
+        char key = _getch();
         if (key == 13) {
             isStopped = !isStopped;
         }

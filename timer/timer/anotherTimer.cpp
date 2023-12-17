@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
+#include "anotherTimer.h"
 using namespace std;
 
 bool isNum(const string& str)
 {
-    for (char const& c : str) { // Проверка всех символов в str
+    for (char const& c : str) {
         if (!isdigit(c))
             return false;
     }

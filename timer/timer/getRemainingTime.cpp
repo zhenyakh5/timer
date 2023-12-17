@@ -1,11 +1,12 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include "getRemainingTime.h"
 using namespace std;
 
 bool isNumber(const string& str)
 {
-    for (char const& ch : str) { // Проверка всех символов в str
+    for (char const& ch : str) {
         if (!isdigit(ch))
             return false;
     }
